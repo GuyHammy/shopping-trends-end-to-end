@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:18
+    container_name: analyst-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: postgres   # change this, and set the same value as POSTGRES_PASSWORD in your shell before running the notebook
+      POSTGRES_DB: customer_analysis
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql
+
+volumes:
+  pgdata:
