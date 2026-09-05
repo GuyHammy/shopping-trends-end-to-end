@@ -45,7 +45,7 @@ The engineered dataset was loaded directly into a PostgreSQL database (`customer
 
 **Top 3 products per category**, using `ROW_NUMBER()` partitioned by category, e.g. Jewelry, Belts, and Sunglasses lead Accessories, while Pants, Blouses, and Shirts lead Clothing.
 
-**Discount sensitivity**: Hats (50%), Sneakers (49.7%), and Coats (49.1%) had the highest share of purchases made with a discount applied, useful for thinking about which product lines are the most price-sensitive.
+**Discount sensitivity**: Hats (50%), Sneakers (49%), and Coats (49%) had the highest share of purchases made with a discount applied, useful for thinking about which product lines are the most price-sensitive.
 
 The full set of 10 queries, including revenue by age group, shipping type comparisons, and repeat-buyer subscription likelihood, is in [`sql/queries.sql`](./sql/queries.sql).
 
